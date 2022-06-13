@@ -4,10 +4,10 @@ import GlobalStyles from './styles';
 import Pages from './pages';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
-console.log(process, 'process');
+// process.env.URL
 
 const client = new ApolloClient({
-  uri: process.env.URL || 'http://localhost:4000',
+  uri: 'https://server-testapp1.herokuapp.com/',
   cache: new InMemoryCache(),
 });
 
