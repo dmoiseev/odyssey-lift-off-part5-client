@@ -4,6 +4,8 @@ import GlobalStyles from './styles';
 import Pages from './pages';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 
+console.log(process, 'process');
+
 const client = new ApolloClient({
   uri: process.env.URL || 'http://localhost:4000',
   cache: new InMemoryCache(),
